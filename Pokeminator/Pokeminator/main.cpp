@@ -21,25 +21,23 @@ int main() {
 		getline(file, tempP.nazwa);
 		getline(file, tempP.typ);
 		getline(file, tempP.kolor);
+		getline(file, tempP.level);
 		getline(file, tempS);
 		tab.push_back(tempP);
-		licznik++;
 	}
 
-	for (int i = 0; i < licznik; i++)
+	for (int i = 0; i < tab.size(); i++)
 	{
-		cout << tab[i].nazwa << " " << tab[i].typ << " " << tab[i].kolor << endl;
+		cout << tab[i].nazwa << " " << tab[i].typ << " " << tab[i].kolor << " " << tab[i].level << endl;
 	}
 
 	file.close();
 
 
-	cout << "Witaj w Pokeminatorze!\n\n"
+	cout << "\nWitaj w Pokeminatorze!\n\n"
 		<< "Moim zadaniem bedzie odgadniecie o Pokemonie o ktorym myslisz.\n";
 
-
-
-
+	string str1 = "Czy ten Pokemon ";
 
 
 	return 0;

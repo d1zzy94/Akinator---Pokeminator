@@ -7,4 +7,5 @@ struct Pokemon
 	std::string nazwa;
 	std::string typ;
 	std::string kolor;
+	std::string level;
 };
